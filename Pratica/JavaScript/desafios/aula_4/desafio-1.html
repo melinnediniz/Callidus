@@ -1,0 +1,23 @@
+<html lang="pt-br">
+    <head>
+        <title>Lista de Veículos</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript">
+            function takeValue(){
+                let selectedObject = document.querySelector("#listaCarros").selectedOptions[0].value
+
+                alert(`O modelo de carro selecionado é ${selectedObject}`)
+                
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Lista de veículos</h1>
+        <select name="listaCarros" id="listaCarros">
+            <option value="BMW">BMW</option>
+            <option value="Chevrolet" >Chevrolet</option>
+            <option value="Ferrari">Ferrari</option>
+        </select>
+        <button id="submit" onclick="takeValue()">Submit</button>
+    </body>
+</html>
