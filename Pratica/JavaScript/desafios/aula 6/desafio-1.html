@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Object-oriented JavaScript example</title>  
+    
+    <script>
+        class Conta{
+            saldo
+
+            constructor() {
+                this.saldo = 0
+            }
+            get saldo() {
+                return this.saldo;
+            }
+
+            set saldo(saldo)
+            {
+                this.saldo = saldo;
+            }
+
+        }
+
+        let conta1 = new Conta()
+        console.log(conta1.saldo)
+        conta1.saldo = 100
+        console.log(conta1.saldo)
+
+
+    </script>
+  </head>
+  <body>
+    <p>Exemplo de objetos</p>
+    
+  </body>    
+</html>
